@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+            color: floralwhite;
+        }
+
+        a {
+            border-style: groove;
+            color: floralwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our user list</h1>
+    {{#each users}}
+    <p>Name: {{this.name}}</p>
+    <p>Email: {{this.email}}</p>
+    <p>Password: {{this.pass}}</p>
+    <p>Age: {{this.age}}</p>
+    <hr>
+    {{/each}}
+    <h2>The End of user list</h2>
+</body>
+
+</html>

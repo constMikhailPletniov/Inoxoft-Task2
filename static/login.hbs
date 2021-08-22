@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body {
+        background-color: rgb(88, 151, 223);
+        color: rgb(232, 248, 7);
+    }
+
+    #btn {
+        background-color: rgb(245, 225, 4);
+        color: rgb(9, 78, 190);
+        border-radius: 40%;
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    <form action="/auth" method="post">
+        <label>Email <input type="email" name="email"></label>
+        <label>Password <input type="password" name="pass"></label>
+        <input type="submit" value="send" id="btn">
+    </form>
+
+</body>
+
+</html>
